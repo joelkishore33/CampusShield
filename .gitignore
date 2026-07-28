@@ -46,3 +46,8 @@ dist/
 build/
 coverage/
 *.log
+
+# Generated training and test files
+datasets/
+runs/
+video_test_frames/
