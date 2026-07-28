@@ -1,48 +1,48 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
 
-*.pt
-*.pth
-*.onnx
-datasets/
-runs/
-event_outputs/
-video_test_frames/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
 .venv/
-node_modules/
-.next/
-.env.local
-frontend/.env.local
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-*.pt
-*.pth
-*.onnx
-datasets/
-runs/
+# Generated model/event outputs
 event_outputs/
-video_test_frames/
-.venv/
-node_modules/
-.next/
-.env.local
-frontend/.env.local
-
 *.pt
-*.pth
 *.onnx
-datasets/
-runs/
-event_outputs/
-video_test_frames/
-.venv/
+
+# Node / Next.js
 node_modules/
+frontend/node_modules/
 .next/
-.env.local
-frontend/.env.local
-yolov8x.pt
+frontend/.next/
+out/
+frontend/out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# model weights
-*.pt
-*.pth
+# IDE and operating-system files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
 
-# training outputs
-runs/
-video_test_frames/
+# Build and coverage output
+dist/
+build/
+coverage/
+*.log
